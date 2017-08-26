@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Taxa de atualização"
+        android:textSize="25dp"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="3dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="41dp"
+        app:layout_constraintTop_toBottomOf="@+id/debug"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="46dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/debug"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginEnd="95dp"
+        app:layout_constraintRight_toRightOf="@+id/textView"
+        android:layout_marginTop="36dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sua localizaçao atual:"
+        android:textSize="25dp"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        android:layout_marginStart="31dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="37dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Latitude:"
+        android:textSize="25dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="31dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tx_latitude"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tx_latitude" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Longitude:"
+        android:textSize="25dp"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="23dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/tx_latitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="25dp"
+        tools:text="jhjhj"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/tx_longitude"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="23dp"
+        app:layout_constraintLeft_toLeftOf="@+id/tx_longitude" />
+
+    <TextView
+        android:id="@+id/tx_longitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="25dp"
+        tools:text="hvhgvhjv"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="170dp" />
+
+    <Button
+        android:id="@+id/btn_maps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Abrir Google Maps"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="31dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="54dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+</android.support.constraint.ConstraintLayout>
